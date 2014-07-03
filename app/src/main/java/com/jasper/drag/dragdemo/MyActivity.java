@@ -113,12 +113,12 @@ public class MyActivity extends Activity implements DragListListener,
 
         @Override
         public Object getItem(int i) {
-            return null;
+            return mData[i];
         }
 
         @Override
         public long getItemId(int i) {
-            return 0;
+            return i;
         }
 
         @Override
