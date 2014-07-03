@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <com.jasper.drag.dragdemo.controls.DragLayer
+        android:id="@+id/drag_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp" >
+
+        <com.jasper.drag.dragdemo.DragableGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="1dip"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="1dip" />
+
+
+
+
+
+            <com.jasper.drag.dragdemo.controls.DeleteZone
+                android:id="@+id/deletezone"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_delete"
+                android:visibility="invisible" />
+    </com.jasper.drag.dragdemo.controls.DragLayer>
+</RelativeLayout>
